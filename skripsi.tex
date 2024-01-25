@@ -1,0 +1,142 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage[left=4cm, top=4cm, right=3cm, bottom=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e} % Paket untuk penjustifikasi
+
+\usepackage{graphicx} % libarary gambar
+\graphicspath{{images/}}
+
+\usepackage{amsmath,amsfonts,amssymb, mathptmx} %library matematika
+\usepackage{multicol, booktabs, longtable} %library tabel
+\usepackage{caption}
+
+\usepackage{blindtext} %dummy text
+\usepackage{titlesec} % Library untuk Pengaturan format judul
+\usepackage{indentfirst} % Library untuk Pengaturan Indentasi
+\usepackage{fancyhdr} % Library untuk Pengaturan kepala (header) dan kaki (footer)
+\usepackage{setspace} % Library untuk pengaturan spacing Line
+\usepackage{natbib} %library untuk sitasi
+\usepackage{enumitem} % Library untuk mengatur enumerate
+
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+\captionsetup[figure]{hypcap=true}
+
+% pengaturan pemisahan kata
+\pretolerance=10000 % Mengurangi pemisahan kata
+\hyphenpenalty=10000 % Mengurangi pemisahan kata
+
+% Merubah nama chapter
+\renewcommand{\contentsname}{DAFTAR ISI}
+\renewcommand{\chaptername}{BAB}
+\renewcommand{\bibname}{DAFTAR PUSTAKA}
+\renewcommand{\listfigurename}{DAFTAR GAMBAR}
+\renewcommand{\listtablename}{DAFTAR TABEL}
+\renewcommand{\figurename}{Gambar}
+\renewcommand{\listtablename}{DAFTAR TABEL}
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\appendixname}{Lampiran}
+
+% Setting angka di dokumen
+\sloppy
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\setcounter{secnumdepth}{3}
+\renewcommand{\thesubsubsection}{\thesubsection\arabic{subsubsection}}
+
+% Mengatur size dokumen
+\titleformat{\chapter}[display]{\centering\normalfont\large\bfseries}{\MakeUppercase{\chaptertitlename}\ \thechapter}{0pt}{\large}
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+\titleformat{\section}{\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\fontsize{12}{15}\bfseries}{\thesubsection}{1em}{}
+
+% penggunaan first line % gunakan \noindent untuk normal line
+\setlength\parindent{36pt}
+
+% Mebgatur gaya dokumen
+\pagestyle{empty}
+\renewcommand{\headrulewidth}{0pt}
+
+% Library untuk daftar isi, gambar, dan tabel
+\usepackage{tocloft}
+\setlength{\cftbeforechapskip}{1pt} % Jarak sebelum bab
+\setlength{\cftbeforesecskip}{1pt}  % Jarak sebelum subbab
+\setlength{\cftbeforesubsecskip}{1pt} % Jarak sebelum sub-subbab
+\renewcommand{\cftdotsep}{1}
+% Pengaturan judul daftar isi, daftar tabel, dan daftar gambar
+\renewcommand{\cfttoctitlefont}{\hfil\bfseries\normalsize} % Daftar Isi
+\renewcommand{\cftloftitlefont}{\hfill\bfseries\normalsize} % Daftar Tabel
+\renewcommand{\cftlottitlefont}{\hfill\bfseries\normalsize} % Daftar Gambar
+\renewcommand{\cftaftertoctitle}{\hfil} % Posisi setelah judul Daftar Isi
+\renewcommand{\cftafterloftitle}{\hfill} % Posisi setelah judul Daftar Tabel
+\renewcommand{\cftafterlottitle}{\hfill} % Posisi setelah judul Daftar Gambar
+\setlength{\cftbeforetoctitleskip}{0pt} % Jarak sebelum judul Daftar Isi
+
+
+% Variable
+\newcommand{\Judul}{Tulis Judul disini Sesuai Topik}
+\newcommand{\Nama}{Muhammad Rafli Baihaqi}
+\newcommand{\NIM}{2008541999}
+\newcommand{\Kompetensi}{Komputasi}
+
+\newcommand{\Tanggal}{23 Januari 2024} % tanggal penulisan di kata pengantar
+\newcommand{\Seminar}{-} %tanggal seminar
+
+%====================START PENULISAN==========================
+\begin{document}
+\justifying
+
+% line spacing
+\setstretch{1.5}
+
+% COVER SAMPUL
+\input{header/cover.tex}
+\clearpage
+
+\pagenumbering{roman}
+
+% COVER HALAMAN
+\input{header/cover-hal.tex}
+\clearpage
+
+\input{header/pengesahan.tex}
+\clearpage
+
+\input{header/kata-pengantar.tex}
+\clearpage
+
+\tableofcontents % Daftar isi utama
+\addcontentsline{toc}{chapter}{DAFTAR ISI}
+\clearpage
+
+\listoffigures % Daftar isi utama
+\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+\clearpage
+
+\listoftables % Daftar isi utama
+\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+\clearpage
+
+\pagenumbering{arabic}
+
+\setstretch{2.0}
+
+\input{bab/1.tex}
+\clearpage
+
+\input{bab/2.tex}
+\clearpage
+
+\input{bab/3.tex}
+\clearpage
+
+\setstretch{1.5}
+\bibliographystyle{apalike}
+\bibliography{library}
+\addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
+
+\end{document}

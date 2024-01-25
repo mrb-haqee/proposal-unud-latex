@@ -1,0 +1,61 @@
+\chapter*{BAB I\\PENDAHULUAN}
+\stepcounter{chapter}
+\addcontentsline{toc}{chapter}{BAB I. PENDAHULUAN}
+
+\section{Latar Belakang}
+Untuk sitasi seperti ini \cite{Luschi2013}, ini \citep{Luschi2013}, atau ini \citet{Luschi2013}
+
+\noindent text tanpa indentasi \blindtext[1]
+
+membuat list nomor
+\begin{enumerate}[noitemsep]
+    \item Item Pertama
+    \item Item Kedua
+    \item Item Ketiga
+\end{enumerate}
+
+membuat list nomor
+\begin{enumerate}[label=\alph*]
+    \item Item Pertama
+    \item Item Kedua
+    \item Item Ketiga
+\end{enumerate}
+
+Gambar
+\begin{center}
+    \includegraphics[width=10cm]{logo-unud.png}
+    \captionof{figure}{Diagram Model dengan dua Kompartemen}
+    \label{fig:2-kompartemen}
+\end{center}
+
+perumusan
+\begin{equation}\label{eq:rumus-1}
+    \begin{aligned}
+        \frac{dy(t)}{dt} & = \beta x(t)y(t) - \eta y(t)
+    \end{aligned}
+\end{equation}
+
+refrensi rumus di atas \eqref{eq:rumus-1}
+
+tabel
+\begin{longtable}{ll}
+    \caption{Keterangan parameter pada model}                   \\
+    \toprule
+    \textbf{Variabel}  & \textbf{Deskripsi}                     \\
+    \midrule
+    $x$                & Jumlah Penyu                           \\
+    $y$                & Jumlah Manusia yang mengkonsumsi penyu \\
+    \midrule
+    \textbf{Parameter} & \textbf{Deskripsi}                     \\
+    \midrule
+    $r$                & Laju pertumbuhan populasi penyu        \\
+    $\alpha$           & Tingkat konsumsi oleh manusia          \\
+    $s$                & Tingkat pertumbuhan populasi manusia   \\
+    $\omega$           & Laju kematian alami penyu              \\
+    \bottomrule
+\end{longtable}
+
+\section{Rumusan Masalah}
+\section{Batasan Masalah}
+\section{Tujuan Penelitian}
+\section{Manfaat Penelitian}
