@@ -1,4 +1,4 @@
-# Skripsi Menggunakan Latex Matematika Udayana
+# Skripsi Menggunakan LaTeX Matematika Udayana
 
 ## Deskripsi
 
@@ -12,9 +12,9 @@ Beberapa aplikasi yang harus di instal seperti:
 
 1. VSCode
    Bisa download di [sini](https://code.visualstudio.com/download)
-2. Latex
+2. LaTeX
    Bisa download di [sini](https://miktex.org/download)
-3. Download Ekstensi Latex di VSCode
+3. Download Ekstensi LaTeX di VSCode
    [https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 
 ## Penjelasan File penting
@@ -51,7 +51,7 @@ Beberapa aplikasi yang harus di instal seperti:
 1. Menghapus file latexindent.exe
 2. Menghapus hapus.bat
 
-## Tutorial Latex
+## Tutorial LaTeX
 
 > [www.overleaf.com](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
 
