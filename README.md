@@ -23,7 +23,7 @@ Beberapa aplikasi yang harus di instal seperti:
 2. output dapat dilihat di Skripsi.pdf
 3. file hapus.bat adalah file untuk menghapus file build-in dilatex
 4. file latexindent.exe adalah file untuk formater tulisan latex
-5. file refrensi.bib adalah sitasi dari refrensi (didapat dari mandeley yang di convert ke .bib)
+5. file referensi.bib adalah sitasi dari refrensi (didapat dari mandeley yang di convert ke .bib)
 
 ## Langkah-langkah instalasi
 
@@ -33,7 +33,7 @@ Beberapa aplikasi yang harus di instal seperti:
 4. kompilasi sitasi dengan cara ketik command ini pada terminal
 
    ```bash
-   > bibtex skrpsi
+   > biber skrpsi
    ```
 
    Note: nama harus sama seperti file utama .tex
