@@ -1,59 +1,112 @@
 \chapter*{BAB I\\PENDAHULUAN}
+\thispagestyle{chapterfirstpage}
 \stepcounter{chapter}
 \addcontentsline{toc}{chapter}{BAB I. PENDAHULUAN}
 
 \section{Latar Belakang}
-Untuk sitasi seperti ini \cite{Luschi2013}, ini \citep{Luschi2013}, atau ini \citet{Luschi2013}
+Panduan latex $\rightarrow$ \href{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes}{www.overleaf.com}
+\section{Indentasi}
+Text dengan indentasi \lipsum[1][1-3]
 
-\noindent text tanpa indentasi \blindtext[1]
+\noindent Text tanpa indentasi \lipsum[1][1-3]
+\textit{italic}, \textbf{bold}, \textbf{\textit{italic-bold}}
 
-membuat list nomor
-\begin{enumerate}[noitemsep]
+\section{Sitasi}
+\noindent Terdapat beberapa penulisan sitasi, yaitu:
+\begin{enumerate}
+    \item Seperti ini \cite{Luschi2013}, untuk (Author, year)
+    \item Seperti ini \citeA{Luschi2013} untuk Author (year)
+    \item Seperti ini \citeauthor{Luschi2013} untuk Author saja
+    \item Seperti ini \citeyear{Luschi2013} untuk Author year saja
+    \item Seperti ini \citeNP{Luschi2013} untuk Author, year
+\end{enumerate}
+
+\section{Perumusan}
+\noindent Perumusan inline diapit oleh tanda \$ untuk membuat rumus, contoh $\dot{x}=\frac{df}{dx}$.
+\noindent Perumusan tanpa label dan di paragraf baru diapit menggunakan \$\$, contoh
+$$
+    \frac{dy(t)}{dt} = \beta x(t)y(t) - \eta y(t)
+$$
+
+\noindent Selanjutnya menggunakan 'equation' untuk penomoran rumus
+\begin{equation}\label{eq:1}
+    \frac{dy(t)}{dt} = \beta x(t)y(t) - \eta y(t)
+\end{equation}
+\noindent refrensi rumus di atas \eqref{eq:1}
+
+\section{Numbering}
+\noindent Membuat list angka
+\begin{enumerate}
     \item Item Pertama
     \item Item Kedua
     \item Item Ketiga
 \end{enumerate}
-
-membuat list nomor
+\noindent Membuat list huruf
 \begin{enumerate}[label=\alph*]
     \item Item Pertama
     \item Item Kedua
     \item Item Ketiga
 \end{enumerate}
+\noindent Membuat list simbol
+\begin{itemize}
+    \item Item Pertama
+    \item Item Kedua
+    \item Item Ketiga
+\end{itemize}
 
-Gambar
+\section{Menambahkan Gambar}
+\begin{figure}[ht!]
+    \label{fig:1}
+    \centering
+    \includegraphics[width=0.2\textwidth]{logo-unud.png}
+    \caption{logo unud}
+\end{figure}
 \begin{center}
-    \includegraphics[width=10cm]{logo-unud.png}
-    \captionof{figure}{Diagram Model dengan dua Kompartemen}
-    \label{fig:2-kompartemen}
+    \includegraphics[width=0.2\textwidth]{logo-unud.png}
+    \captionof{figure}{logo unud}
+    \label{fig:2}
 \end{center}
 
-perumusan
-\begin{equation}\label{eq:rumus-1}
-    \begin{aligned}
-        \frac{dy(t)}{dt} & = \beta x(t)y(t) - \eta y(t)
-    \end{aligned}
-\end{equation}
 
-refrensi rumus di atas \eqref{eq:rumus-1}
 
-tabel
+\section{Tabel}
+Gunakan table atau longtable, bedanya longtable dapat dipecah seperti dibawah ini
 \begin{longtable}{ll}
-    \caption{Keterangan parameter pada model}                   \\
+    \caption{caption tabel}                   \\
     \toprule
-    \textbf{Variabel}  & \textbf{Deskripsi}                     \\
+    \textbf{Variabel}  & \textbf{Deskripsi}   \\
     \midrule
-    $x$                & Jumlah Penyu                           \\
-    $y$                & Jumlah Manusia yang mengkonsumsi penyu \\
+    $x$                & Variable X           \\
+    $y$                & Variable Y           \\
     \midrule
-    \textbf{Parameter} & \textbf{Deskripsi}                     \\
+    \textbf{Parameter} & \textbf{Deskripsi}   \\
     \midrule
-    $r$                & Laju pertumbuhan populasi penyu        \\
-    $\alpha$           & Tingkat konsumsi oleh manusia          \\
-    $s$                & Tingkat pertumbuhan populasi manusia   \\
-    $\omega$           & Laju kematian alami penyu              \\
+    $r$                & Parameter $r$        \\
+    $\alpha$           & Parameter $\alpha$   \\
+    $s$                & Parameter  $s$       \\
+    $\omega$           & Parameter   $\omega$ \\
     \bottomrule
 \end{longtable}
+\noindent atau tabel biasa
+\begin{table}[h!]
+    \centering
+    \caption{caption tabel}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Variabel}  & \textbf{Deskripsi}   \\
+        \hline
+        $x$                & Variable X           \\
+        $y$                & Variable Y           \\
+        \hline
+        \textbf{Parameter} & \textbf{Deskripsi}   \\
+        \hline
+        $r$                & Parameter $r$        \\
+        $\alpha$           & Parameter $\alpha$   \\
+        $s$                & Parameter  $s$       \\
+        $\omega$           & Parameter   $\omega$ \\
+        \hline
+    \end{tabular}
+\end{table}
 
 \section{Rumusan Masalah}
 \section{Batasan Masalah}

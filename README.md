@@ -23,7 +23,7 @@ Beberapa aplikasi yang harus di instal seperti:
 2. output dapat dilihat di Skripsi.pdf
 3. file hapus.bat adalah file untuk menghapus file build-in dilatex
 4. file latexindent.exe adalah file untuk formater tulisan latex
-5. file library.bib adalah sitasi dari refrensi (didapat dari mandeley yang di convert ke .bib)
+5. file refrensi.bib adalah sitasi dari refrensi (didapat dari mandeley yang di convert ke .bib)
 
 ## Langkah-langkah instalasi
 
@@ -49,7 +49,11 @@ Beberapa aplikasi yang harus di instal seperti:
 ## Don't do it
 
 1. Menghapus file latexindent.exe
-1. Menghapus hapus.bat
+2. Menghapus hapus.bat
+
+## Tutorial Latex
+
+> [www.overleaf.com](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
 
 <br>
 
