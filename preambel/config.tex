@@ -22,10 +22,11 @@
 \usepackage[nodisplayskipstretch]{setspace} % Library untuk pengaturan spacing Line
 \usepackage{enumitem} % Library untuk mengatur enumerate
 \setlist[enumerate,itemize]{noitemsep,nosep}
-% \usepackage[round]{natbib} %library untuk sitasi
-% \renewcommand\cite\citep
-% \usepackage{apacite}
+
+% Library Referensi
 \usepackage[style=apa,backend=biber]{biblatex}%maxcitenames=1
+
+\usepackage{adjustbox}
 
 % Merubah nama chapter
 \renewcommand\contentsname{DAFTAR ISI}
@@ -41,18 +42,18 @@
 \sloppy
 \renewcommand\thechapter{\Roman{chapter}}
 \renewcommand\thesection{\arabic{chapter}.\arabic{section}}
-\renewcommand\thesubsection{\thesection\arabic{subsection}}
-\renewcommand\thesubsubsection{\thesubsection\arabic{subsubsection}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
 \renewcommand\thefigure{\arabic{chapter}.\arabic{figure}}
 \renewcommand\thetable{\arabic{chapter}.\arabic{table}}
 \renewcommand\theequation{\arabic{chapter}.\arabic{equation}}
 \setcounter{secnumdepth}{3}
 
 % Mengatur size dokumen
-\titleformat{\chapter}[display]{\centering\normalfont\large\bfseries}{\MakeUppercase{\chaptertitlename}\ \thechapter}{0pt}{\large}
+\titleformat{\chapter}[display]{\centering\normalfont\large\bfseries}{\chaptertitlename\ \thechapter}{100pt}{\large}
 \titleformat{\section}{\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
-\titlespacing{\chapter}{0pt}{10pt}{10pt}
+\titlespacing{name=\chapter,numberless}{0pt}{-30pt}{20pt}
 \titlespacing{\section}{0pt}{10pt}{5pt}
 \titlespacing{\subsection}{0pt}{10pt}{5pt}
 
@@ -71,6 +72,11 @@
 \renewcommand\cftafterloftitle{\hfill} % Posisi setelah judul Daftar Tabel
 \renewcommand\cftafterlottitle{\hfill} % Posisi setelah judul Daftar Gambar
 \setlength{\cftbeforetoctitleskip}{0pt} % Jarak sebelum judul Daftar Isi
+\setlength{\cftbeforeloftitleskip}{0pt} % Jarak sebelum judul Daftar Tabel
+\setlength{\cftbeforelottitleskip}{0pt} % Jarak sebelum judul Daftar Gambar
+\setlength{\cftaftertoctitleskip}{20pt} % Jarak setelah judul Daftar Isi
+\setlength{\cftafterloftitleskip}{20pt} % Jarak setelah judul Daftar Tabel
+\setlength{\cftafterlottitleskip}{20pt} % Jarak setelah judul Daftar Gambar
 
 % Setting letak penomoran halaman awal chapter
 \fancypagestyle{chapterfirstpage}{

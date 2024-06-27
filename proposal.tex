@@ -2,17 +2,17 @@
 % \usepackage{showframe} % memunculkan frame
 
 % usepackage/library
-\input{config/#.tex}
+\input{preambel/config.tex}
 \addbibresource{referensi.bib}
 
 % Variable
-\newcommand\Judul{Tulis Judul disini Sesuai Topik}
+\newcommand\Judul{Pemodelan Matematika dalam Mencegah Kepunahan Populasi Penyu di Bali}
 \newcommand\Nama{Muhammad Rafli Baihaqi}
-\newcommand\NIM{2008541999}
+\newcommand\NIM{2008541066}
 \newcommand\Kompetensi{Komputasi}
 
-\newcommand\Tanggal{23 Januari 2024} % tanggal penulisan di kata pengantar
-\newcommand\Seminar{-} %tanggal seminar
+\newcommand\Tanggal{31 Januari 2024} % tanggal penulisan di kata pengantar
+\newcommand\Seminar{7 Februari 2024} % tanggal seminar
 
 \newarray\dospemsatu
 \readarray{dospemsatu}{Dr. Drs. G.K. Gandhiadi, M.T.&196209301988031002} % {nama+gelar&nip}
@@ -26,22 +26,22 @@
 \setstretch{1.5} % line spacing
 
 % COVER SAMPUL
-\input{header/cover.tex}
+\input{section_header/1_cover.tex}
 \clearpage
 
 \pagenumbering{roman}
 
 % COVER HALAMAN
-\input{header/cover-hal.tex}
+\input{section_header/2_cover_hal.tex}
 \clearpage
 
-\input{header/pengesahan.tex}
+\input{section_header/3_pengesahan.tex}
 \clearpage
 
-\input{header/kata-pengantar.tex}
+\input{section_header/4_kata_pengantar.tex}
 \clearpage
 
-\input{header/daftar-isi-gambar-tabel.tex}
+\input{section_header/5_toc.tex}
 \clearpage
 
 \pagenumbering{arabic}
@@ -49,18 +49,15 @@
 \setstretch{2.0}
 \pagestyle{otherpages}
 
-\input{bab/1.tex}
+\input{section_bab/1.tex}
 \clearpage
 
-\input{bab/2.tex}
+\input{section_bab/2.tex}
 \clearpage
 
-\input{bab/3.tex}
+\input{section_bab/3.tex}
 \clearpage
 
 \setstretch{1.5}
 \printbibliography
-% \bibliographystyle{apacite}
-% \bibliography{refrensi}
-
 \end{document}

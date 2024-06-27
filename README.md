@@ -19,37 +19,28 @@ Beberapa aplikasi yang harus di instal seperti:
 
 ## Penjelasan File penting
 
-1. file utama berada di Skripsi.tex
-2. output dapat dilihat di Skripsi.pdf
-3. file hapus.bat adalah file untuk menghapus file build-in dilatex
-4. file latexindent.exe adalah file untuk formater tulisan latex
-5. file referensi.bib adalah sitasi dari refrensi (didapat dari mandeley yang di convert ke .bib)
+1. file utama berada di proposal.tex
+2. output dapat dilihat di proposal.pdf
+3. file config.bat adalah file untuk menghapus file build-in di latex
+4. file clear.bat adalah file untuk menghapus file build-in di latex
+5. file latexindent.exe adalah file untuk formater tulisan latex
+6. file referensi.bib adalah sitasi dari refrensi (didapat dari mandeley yang di convert ke .bib)
 
 ## Langkah-langkah instalasi
 
 1. clone repository ini
-2. klik 2x hapus.bat untuk yang pertama kali (tenang, tidak akan menghapus file penting:v)
-3. Running file .tex nya!
-4. kompilasi sitasi dengan cara ketik command ini pada terminal
-
-   ```bash
-   > biber skrpsi
-   ```
-
-   Note: nama harus sama seperti file utama .tex
-
-5. Lalu running file .tex berulang kali sampai sitasi muncul (biasanya dibutuhkan 2x running)
+2. jalankan file config.bat dengan mengeklik 2x
+3. Buka VScode untuk menjalankan proposal.tex
 
 ## Tips and Tricks
 
-1. ingin menghapus file build-in dilatex? klik 2x hapus.bat
-2. jika ada error, reload file dengan lakukan tips pertama dan jalankan ulang
+1. ingin menghapus file build-in dilatex? klik 2x clear.bat atau gunakan command latex `latexmk -c -bibtex` pada terminal
+2. jika ada error, reload file dengan lakukan tips pertama dan jalankan ulang config.bat
 3. Letakkan semua gambar pada folder images!
 
 ## Don't do it
 
-1. Menghapus file latexindent.exe
-2. Menghapus hapus.bat
+> Menghapus file latexindent.exe, config.bat, clear.bat
 
 ## Tutorial LaTeX
 
@@ -58,6 +49,6 @@ Beberapa aplikasi yang harus di instal seperti:
 <br>
 
 <center>
-Jika ada pertanyaan Silahkan Kontak saya :v<br><br>
+Jika ada pertanyaan Silahkan Kontak saya<br><br>
 Salam Hangat!<br>Rafli
 </center>
